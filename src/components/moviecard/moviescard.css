@@ -98,6 +98,7 @@
     }
 
     .movie-card img {
-        height: 250px;
+        width: 100%;
+        min-height: 140px;
     }
 }
