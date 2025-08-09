@@ -509,12 +509,18 @@
 .not-found-wrapper .text_4041,
 .not-found-wrapper .text_4042,
 .not-found-wrapper .text_4043 {
-    transform: scaleY(24.5) scaleX(9);
+    font-size: 200px;
 }
 
-@media only screen and (max-width: 495px) {
+@media only screen and (max-width: 768px) {
     .not-found-wrapper .text_404 {
         column-gap: 6em;
+    }
+
+    .not-found-wrapper .text_4041,
+    .not-found-wrapper .text_4042,
+    .not-found-wrapper .text_4043 {
+        font-size: 100px;
     }
 }
 
@@ -526,7 +532,7 @@
     .not-found-wrapper .text_4041,
     .not-found-wrapper .text_4042,
     .not-found-wrapper .text_4043 {
-        transform: scaleY(25) scaleX(8);
+        font-size: 80px;
     }
 }
 

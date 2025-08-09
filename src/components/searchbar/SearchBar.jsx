@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { RiSearchLine, RiCloseLargeFill } from 'react-icons/ri';
-import './searchBar.css';
+import './searchbar.css';
 
 const SearchBar = ({ onSearch }) => {
     const [searchText, setSearchText] = useState('');
