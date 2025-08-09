@@ -1,0 +1,33 @@
+.movies-categories {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.category-btn {
+    padding: 8px 15px;
+    border: none;
+    background-color: #222;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background-color: #444;
+}
+
+.category-btn.active {
+    background-color: #e50914;
+    color: white;
+}
+
+.movies-categories p {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+    text-align: center;
+}

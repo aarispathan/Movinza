@@ -1,0 +1,28 @@
+.movies-grid {
+    width: 100%;
+    padding: 15px 0;
+}
+
+.movies-grid .load-more-button {
+    text-align: center;
+
+}
+
+.movies-grid .load-more-button button {
+    background-color: #0000001a;
+    padding: 7px 40px 5px 40px;
+    border: none;
+    border-radius: 5px 5px 0px 0px;
+    cursor: pointer;
+    color: black;
+    border-bottom: 2px solid black;
+}
+
+.movies-grid .load-more-button button:hover {
+    background-color: #0000003d;
+}
+
+.movies-grid .load-more-button button:active {
+    background-color: #0000001a;
+    color: black;
+}

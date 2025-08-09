@@ -1,0 +1,88 @@
+.text-loop-wrapper {
+    display: flex;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+    height: 100px;
+}
+
+.text-loop-wrapper .list {
+    display: inline-flex;
+    align-items: center;
+    animation: loop 20s linear infinite;
+}
+
+.text-loop-wrapper .list .item {
+    display: flex;
+    align-items: center;
+}
+
+.text-loop-wrapper .list .item-txt {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: normal;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #1A1A1A;
+    margin-right: 20px;
+}
+
+
+.text-loop-wrapper .list .item-d {
+    display: inline-block;
+}
+
+
+
+.text-loop-wrapper .list .item-dot {
+    width: 20px;
+    height: 20px;
+    margin: 0 25px;
+    border-radius: 50%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text-loop-wrapper .list .dot-r {
+    background-color: #F35C4A;
+}
+
+.text-loop-wrapper .list .dot-b {
+    background-color: #1188FF;
+}
+
+.text-loop-wrapper .list .dot-g {
+    background-color: #60F2D0;
+}
+
+.text-loop-wrapper .list .dot-y {
+    background-color: #FFDB6B;
+}
+
+.text-loop-wrapper .list .dot-t {
+    background-color: #BFE05E;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .text-loop-wrapper .list .item-txt {
+        font-size: 30px;
+    }
+
+    .text-loop-wrapper .list .item-dot {
+        width: 15px;
+        height: 15px;
+        margin: 0 30px;
+    }
+}
