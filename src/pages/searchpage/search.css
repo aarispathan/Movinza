@@ -18,9 +18,28 @@
     grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
 }
 
+@media screen and (max-width: 1024px) {
+    .search-page-wrapper .search-grid {
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .search-page-wrapper .search-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 1rem;
+    }
+}
+
 @media (max-width: 576px) {
     .search-page-wrapper {
         padding: 1rem 0.5rem;
         grid-template-columns: none;
+    }
+
+    .search-page-wrapper .search-grid {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 8px;
     }
 }

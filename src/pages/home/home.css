@@ -7,3 +7,11 @@
     display: flex;
     margin-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .home-page-col {
+        padding: 0 8px;
+        margin-bottom: 15px;
+    }
+
+}

@@ -19,14 +19,11 @@ const NewMoviesSlider = ({ movies }) => {
                     disableOnInteraction: false,
                 }}
                 speed={800}
-                spaceBetween={20}
-                slidesPerView={Math.min(5, movies.length)}
                 breakpoints={{
-                    320: { slidesPerView: Math.min(3, movies.length), spaceBetween: 10 },
-                    480: { slidesPerView: Math.min(4, movies.length), spaceBetween: 15 },
-                    768: { slidesPerView: Math.min(4, movies.length), spaceBetween: 20 },
-                    1024: { slidesPerView: Math.min(6, movies.length), spaceBetween: 20 },
-                    1280: { slidesPerView: Math.min(6, movies.length), spaceBetween: 20 },
+                    0: { slidesPerView: 3, spaceBetween: 10 },     // mobile
+                    768: { slidesPerView: 4, spaceBetween: 20 },   // tablets
+                    1024: { slidesPerView: 4, spaceBetween: 20 },  // laptops
+                    1280: { slidesPerView: 6, spaceBetween: 20 },  // desktops
                 }}
             >
 

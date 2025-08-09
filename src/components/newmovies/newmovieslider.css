@@ -45,7 +45,6 @@
     }
 }
 
-/* Small mobile */
 @media (max-width: 480px) {
     .movie-slide-image {
         max-height: 180px;
